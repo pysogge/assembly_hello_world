@@ -9,6 +9,11 @@ ld hello_asm.o -e _main -lc -o hello_asm.out -macosx_version_min 12.0 -L /Librar
 ./hello_asm.out
 ```
 
+Show last return code:
+```
+echo $?
+```
+
 ## Projects
 
 ### Hello ASM
@@ -16,6 +21,13 @@ ld hello_asm.o -e _main -lc -o hello_asm.out -macosx_version_min 12.0 -L /Librar
 as hello_asm.s -o hello_asm.o
 ld hello_asm.o -e _main -lc -o hello_asm.out -macosx_version_min 12.0 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem
 ./hello_asm.out
+```
+
+### Hello from C - ASM
+```
+as hello_casm.s -o hello_casm.o
+ld hello_casm.o -e _main -lc -o hello_casm.out -macosx_version_min 12.0 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -lSystem
+./hello_casm.out
 ```
 
 ## Ref

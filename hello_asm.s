@@ -1,6 +1,3 @@
-# hello_asm.s
-# as hello_asm.s -o hello_asm.o
-# ld hello_asm.o -e _main -lc -o hello_asm
 .section __DATA,__data
 str:
   .asciz "Hello, World!\n"
