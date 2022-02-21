@@ -19,6 +19,11 @@ ld hello_asm.o -e _main -lc -o hello_asm.out -macosx_version_min 12.0 -L /Librar
 ```
 
 ## Ref
+To pull assembly code from a compiled c file:
+```
+otool -tv hello_world.out
+```
+
 ```
 http://www.idryman.org/blog/2014/12/02/writing-64-bit-assembly-on-mac-os-x/
 ```
